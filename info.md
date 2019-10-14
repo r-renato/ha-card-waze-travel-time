@@ -1,5 +1,12 @@
 # HA (Lovelace) Card Waze Travel Time
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
+
+[![License][license-shield]](LICENSE.md)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/r-renato/hass-xiaomi-mi-flora-and-flower-care.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/r-renato/ha-card-waze-travel-time/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/r-renato/ha-card-waze-travel-time.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/r-renato/ha-card-waze-travel-time/context:javascript)
+[![BuyMeCoffee][buymecoffeebadge]][buymecoffee]
+
 ## Features
 
 * Display multiple Waze routes sensor
@@ -60,3 +67,6 @@ style:
   border: solid 1px rgba(100,100,100,0.3)
   box-shadow: 3px 3px rgba(0,0,0,0.4)
 ```
+[license-shield]:https://img.shields.io/github/license/r-renato/hass-xiaomi-mi-flora-and-flower-care
+[buymecoffee]: https://www.buymeacoffee.com/0D3WbkKrn
+[buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow?style=for-the-badge
