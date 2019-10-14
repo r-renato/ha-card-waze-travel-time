@@ -30,7 +30,7 @@ resources:
 | **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                     |
 |--------------|---------------|-----------------|-----------------------------------|-----------------------------------------------------|
 | type         | string        | **Required**    |                                   | Card type must be `custom:ha-card-waze-travel-time` |
-| destinations | string object | **Required**    |                                   | List of destination objects to display              |
+| destinations | object list   | **Required**    |                                   | List of destination objects to display              |
 | header       | boolean       | Optional        | `true`                            | Hide/show route columns header                      |
 | name         | string        | Optional        |                                   | Card name shown on top the routes                   |
 | columns      | string list   | Optional        | `name, distance, duration, icon`  | Ordered list of columns to display                  |
