@@ -1,4 +1,4 @@
-# HA Card Waze Travel Time
+# HA (Lovelace) Card Waze Travel Time
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
