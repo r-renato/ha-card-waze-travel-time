@@ -27,7 +27,7 @@ resources:
 ```
 ### Card variables
 
-| **Name**     | **Type**      | **Requirement** | **Default**                       | Description                                         |
+| **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                     |
 |--------------|---------------|-----------------|-----------------------------------|-----------------------------------------------------|
 | type         | string        | **Required**    |                                   | Card type must be `custom:ha-card-waze-travel-time` |
 | destinations | string object | **Required**    |                                   | List of destination objects to display              |
@@ -37,10 +37,10 @@ resources:
 
 #### Destination object    
 
-| **Name** | **Type** | **Requirement** | Description
-|----------|----------|-----------------|-----------
-| entity   | string   | **Required**    | The waze sensor entitiy 
-| name     | string   | **Required**    | The name for the route
+| **Name** | **Type** | **Requirement** | **Description**         |
+|----------|----------|-----------------|-------------------------|
+| entity   | string   | **Required**    | The waze sensor entitiy |
+| name     | string   | **Required**    | The name for the route  |
 
 #### Examples
 
