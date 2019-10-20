@@ -27,13 +27,13 @@ resources:
 ```
 ### Card variables
 
-| **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                                                           |
-|--------------|---------------|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------|
-| type         | string        | **Required**    |                                   | Card type must be `custom:ha-card-waze-travel-time`                                       |
-| header       | boolean       | Optional        | `true`                            | Hide/show route columns header                                                            |
-| name         | string        | Optional        |                                   | Card name shown on top the routes                                                         |
-| columns      | string list   | Optional        | `name, distance, duration, icon`  | Ordered list of columns to display. Valid values: `name, distance, duration, icon, route` |
-| destinations | object list   | **Required**    |                                   | List of destination objects to display                                                    |
+| **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                                                               |
+|--------------|---------------|-----------------|-----------------------------------|-----------------------------------------------------------------------------------------------|
+| type         | string        | **Required**    |                                   | Card type must be `custom:ha-card-waze-travel-time`                                           |
+| header       | boolean       | Optional        | `true`                            | Hide/show route columns header                                                                |
+| name         | string        | Optional        |                                   | Card name shown on top the routes                                                             |
+| columns      | string list   | Optional        | `to, distance, duration, icon`    | Ordered list of columns to display. Valid values: `from, to, distance, duration, icon, route` |
+| destinations | object list   | **Required**    |                                   | List of destination objects to display                                                        |
 
 #### Destination object    
 
