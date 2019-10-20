@@ -71,7 +71,7 @@ style:
   box-shadow: 3px 3px rgba(0,0,0,0.4)
 ```
 
-<img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/.md.images/ha-card-waze-travel-time.png"  width="40%" height="40%" alt="Home Assistant lovelace card">
+<img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/md.images/ha-card-waze-travel-time.png"  width="40%" height="40%" alt="Home Assistant lovelace card">
 
 [license-shield]:https://img.shields.io/github/license/r-renato/hass-xiaomi-mi-flora-and-flower-care
 [buymecoffee]: https://www.buymeacoffee.com/0D3WbkKrn
