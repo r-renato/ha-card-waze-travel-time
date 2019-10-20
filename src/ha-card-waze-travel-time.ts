@@ -141,13 +141,14 @@ class WazeTravelTimeCard extends LitElement {
 
       if(sensor) {
         sensor = ( this._clone( sensor ) ) ;
-        sensor.name = entity.name || sensor.name ;
+        sensor.from = entity.from ;
+        sensor.to = entity.to || sensor.name ;
         return sensor ;
       } else
         return null ;
       }).filter(Boolean);
 
-    // console.log( { waze_states: waze_states } ) ;
+    //console.log( { waze_states: waze_states } ) ;
 
     return waze_states.map(state => {
       let origin_lat: number, origin_long: number, destination_lat: number, destination_long: number ;
@@ -165,9 +166,8 @@ class WazeTravelTimeCard extends LitElement {
       }
 
       let result =  {
-        // origin: state.origin,
-        //destination: state.attributes.destination,
-        name: state.name || '',
+        from: state.from || '',
+        to: state.to || '',
         distance: this.computeDistance(state),
         duration: this.computeDuration(state),
         route: state.attributes && state.attributes.route || '',
@@ -181,7 +181,7 @@ class WazeTravelTimeCard extends LitElement {
           long: origin_long
         }
       } ;
-       // console.log( { result: result } ) ;
+      // console.log( { result: result } ) ;
       return result ;
     });
 

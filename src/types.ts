@@ -8,7 +8,8 @@ export interface CardConfig {
 
 export interface Destinations {
   entity: string ;
-  name: string ;
+  from?: string ;
+  to: string ;
 }
 
 export interface WazeState {
@@ -21,11 +22,15 @@ export interface WazeState {
     origin: string,
     destination: string
   },
+
   destination: {
     lat: number,
     long: number
-  }
+  },
+
   name: string,
+  from: string,
+  to: string,
   state: string,
   to_unit_system : string
 }

@@ -2,7 +2,7 @@ import { css } from 'lit-element';
 
 const style = css`
     ha-card {
-        padding: 24px 16px 16px 16px;
+        padding: 7px 7px 7px 7px;
     }
     
     .banner {
@@ -11,20 +11,20 @@ const style = css`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding-top: 12px;
+        padding-top: 0px;
         
-        background-color: rgba(50,50,50,0.75);
-        border-radius: 3px;
+        // background-color: rgba(50,50,50,0.75);
+        // border-radius: 3px;
     }
     
     .has-plant-image .banner {
-        padding-top: 30%;
+        padding-top: 2%;
     }
     
     .header {
         @apply --paper-font-headline;
         line-height: 40px;
-        padding: 8px 16px;
+        padding: 0px 8px;
         font-weight: 500;
         font-size: 125%;
     }
