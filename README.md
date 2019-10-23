@@ -30,7 +30,7 @@ resources:
 | **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                                                               |
 |--------------|---------------|-----------------|-----------------------------------|-----------------------------------------------------------------------------------------------|
 | type         | string        | **Required**    |                                   | Card type must be `custom:ha-card-waze-travel-time`                                           |
-| header       | boolean       | Optional        | `true`                            | Hide/show route columns header                                                                |
+| headers      | boolean       | Optional        | `true`                            | Hide/show route column headers                                                                |
 | name         | string        | Optional        |                                   | Card name shown on top the routes                                                             |
 | columns      | string list   | Optional        | `to, distance, duration, icon`    | Ordered list of columns to display. Valid values: `from, to, distance, duration, icon, route` |
 | destinations | object list   | **Required**    |                                   | List of destination objects to display                                                        |
@@ -49,7 +49,7 @@ resources:
 type: custom:card-modder
 card:
   type: custom:ha-card-waze-travel-time
-  header: false
+  headers: true
   name: "Route to..."
   columns:
     - from
@@ -59,9 +59,10 @@ card:
     - icon
   destinations:
     - entity: sensor.waze_home_1_workplace
-      name: "1 workplace"
+      from: "Place 1"
+      to: "Place 2"
     - entity: sensor.waze_home_2_workplace
-      name: "2 workplace"
+      to: "Place 3"
 style:
   background-repeat: no-repeat
   background-color: rgba(50,50,50,0.3)
@@ -71,7 +72,7 @@ style:
   box-shadow: 3px 3px rgba(0,0,0,0.4)
 ```
 
-<img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/md.images/ha-card-waze-travel-time.png"  width="40%" height="40%" alt="Home Assistant lovelace card">
+<img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/md.images/ha-card-waze-travel-time.png" width="40%" height="40%" alt="Home Assistant lovelace card">
 
 [license-shield]:https://img.shields.io/github/license/r-renato/hass-xiaomi-mi-flora-and-flower-care
 [buymecoffee]: https://www.buymeacoffee.com/0D3WbkKrn
