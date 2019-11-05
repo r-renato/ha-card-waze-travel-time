@@ -59,9 +59,10 @@ card:
     - icon
   destinations:
     - entity: sensor.waze_home_1_workplace
-      name: "1 workplace"
+      from: "Place 1"
+      to: "Place 2"
     - entity: sensor.waze_home_2_workplace
-      name: "2 workplace"
+      to: "Place 3"
 style:
   background-repeat: no-repeat
   background-color: rgba(50,50,50,0.3)
