@@ -52,6 +52,7 @@ card:
   type: custom:ha-card-waze-travel-time
   header: false
   name: "Route to..."
+  unit: km
   columns:
     - from
     - to
