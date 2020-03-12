@@ -20,10 +20,13 @@ import {CardConfig, Destinations, WazeState} from "./types" ;
 
 import style from './style' ;
 
+console.info("%c WAZE-TRAVEL-TIME-CARD %c 1.0.1 ", "color: white; background: green; font-weight: 700;", "color: coral; background: white; font-weight: 700;");
+
 @customElement("ha-card-waze-travel-time")
 class WazeTravelTimeCard extends LitElement {
   private invalidConfig: boolean = false ;
   private invalidDestinations: boolean = false ;
+  private invalidUnit: boolean = false ;
 
   private _header: boolean = false ;
   private _headers: boolean = false ;
@@ -42,6 +45,11 @@ class WazeTravelTimeCard extends LitElement {
     if (!config) {
       this.invalidConfig = true ;
       throw new Error("Invalid configuration") ;
+    }
+
+    if (!config.unit || config.unit.length == 0 || ('km' !== config.unit.toLowerCase() && 'mi' !== config.unit.toLowerCase()) ) {
+      this.invalidUnit = true ;
+      throw new Error('Unit (km/mi) are required') ;
     }
 
     if (!config.destinations || config.destinations.length == 0) {
@@ -81,13 +89,13 @@ class WazeTravelTimeCard extends LitElement {
    * @return {TemplateResult}
    */
   render() {
-    if ( this.invalidConfig || this.invalidDestinations ) return html`
+    if ( this.invalidConfig || this.invalidDestinations || this.invalidUnit ) return html`
             <ha-card class="ha-card-waze-travel-time">
                 <div class='banner'>
                     <div class="header">ha-card-waze-travel-time</div>
                 </div>
                 <div class='content'>
-                    ERROR
+                    Configuration ERROR!
                 </div>
             </ha-card>
         `;
@@ -217,15 +225,15 @@ class WazeTravelTimeCard extends LitElement {
 
     state.to_unit_system = undefined === state.to_unit_system ? this.hass.config.unit_system.length : state.to_unit_system ;
 
-    if(this.hass.config.unit_system.length !== state.to_unit_system ) {
-      if( 'km' == state.to_unit_system ) {
-        distance = distance / 1.60934 ;
-      } else {
-        distance = distance * 1.60934 ;
-      }
-    }
+    // if(this.hass.config.unit_system.length !== state.to_unit_system ) {
+    //   if( 'km' == state.to_unit_system ) {
+    //     distance = distance / 1.60934 ;
+    //   } else {
+    //     distance = distance * 1.60934 ;
+    //   }
+    // }
 
     distance = Number(Math.round(distance * 100) / 100).toFixed(1);
-    return "" + distance + " " + state.to_unit_system ;
+    return "" + distance + " " + this._config.unit ;
   }
 }

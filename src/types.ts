@@ -1,6 +1,7 @@
 export interface CardConfig {
   type: string ;
   name?: string ;
+  unit: string ;
   headers?: boolean ;
   columns?: string[] ;
   destinations: Destinations[] ;
