@@ -22,7 +22,7 @@ Import the card using:
 
 ```yaml
 resources:
-  - url: /community_plugin/ha-card-waze-travel-time/ha-card-waze-travel-time.js
+  - url: /hacsfiles/ha-card-waze-travel-time/ha-card-waze-travel-time.js
     type: module
 ```
 ### Card variables
