@@ -25,6 +25,13 @@ resources:
   - url: /hacsfiles/ha-card-waze-travel-time/ha-card-waze-travel-time.js
     type: module
 ```
+Optionally, you can use the following plugin to change the card colors:
+
+```yaml
+resources:
+  - url: /hacsfiles/lovelace-card-mod/card-mod.js
+    type: module
+```
 ### Card variables
 
 | **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                                                               |
@@ -47,7 +54,7 @@ resources:
 #### Examples
 
 ```yaml
-type: custom:card-modder
+type: custom:mod-card
 card:
   type: custom:ha-card-waze-travel-time
   header: false
@@ -65,13 +72,20 @@ card:
       to: "Place 2"
     - entity: sensor.waze_home_2_workplace
       to: "Place 3"
-style:
-  background-repeat: no-repeat
-  background-color: rgba(50,50,50,0.3)
-  background-size: 100% 300px
-  border-radius: 20px
-  border: solid 1px rgba(100,100,100,0.3)
-  box-shadow: 3px 3px rgba(0,0,0,0.4)
+style: |
+  ha-card {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #727272;
+    --text-primary-color: #ffffff;
+    --disabled-text-color: #bdbdbd;
+    background-image: url("/local/imgs/card_back.png")
+    background-repeat: no-repeat
+    background-color: rgba(50,50,50,0.3)
+    background-size: 100% 300px
+    border-radius: 20px
+    border: solid 1px rgba(100,100,100,0.3)
+    box-shadow: 3px 3px rgba(0,0,0,0.4)
+  }
 ```
 
 <img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/md.images/ha-card-waze-travel-time.png"  width="40%" height="40%" alt="Home Assistant lovelace card">
