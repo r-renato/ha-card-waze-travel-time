@@ -54,7 +54,7 @@ resources:
 #### Examples
 
 ```yaml
-type: custom:mod-card
+type: custom:card-mod
 card:
   type: custom:ha-card-waze-travel-time
   header: false
