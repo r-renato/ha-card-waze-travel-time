@@ -4,16 +4,11 @@ import {
   customElement,
   property,
   CSSResult,
-  TemplateResult,
-  css,
-  PropertyValues
+  TemplateResult
 } from "lit-element";
 
 import {
-  HomeAssistant,
-  handleClick,
-  longPress,
-  hasConfigOrEntityChanged
+  HomeAssistant
 } from "custom-card-helpers" ;
 
 import {CardConfig, Destinations, WazeState} from "./types" ;
