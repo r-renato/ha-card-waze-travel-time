@@ -15,7 +15,7 @@ import {CardConfig, Destinations, WazeState} from "./types" ;
 
 import style from './style' ;
 
-console.info("%c WAZE-TRAVEL-TIME-CARD %c 1.0.1 ", "color: white; background: green; font-weight: 700;", "color: coral; background: white; font-weight: 700;");
+console.info("%c WAZE-TRAVEL-TIME-CARD %c 1.2.1 ", "color: white; background: green; font-weight: 700;", "color: coral; background: white; font-weight: 700;");
 
 @customElement("ha-card-waze-travel-time")
 class WazeTravelTimeCard extends LitElement {

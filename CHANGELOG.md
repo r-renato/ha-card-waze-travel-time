@@ -10,8 +10,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+## [1.2.1] 2020-05-15
+### Fixed
+- Minor bug fix
 
-## [1.2.0] Unreleased
+## [1.2.0] 2019-10-14
 ### Fixed
 - km/mi unit managed by parameter
 

@@ -2,7 +2,7 @@
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
 
-[![License][license-shield]](LICENSE.md)
+[![License][license-shield]](LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/r-renato/ha-card-waze-travel-time.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/r-renato/ha-card-waze-travel-time/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/r-renato/ha-card-waze-travel-time.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/r-renato/ha-card-waze-travel-time/context:javascript)
 
@@ -15,6 +15,10 @@
 * Show best route to take
 * Opening the Waze App on route click
 * Supports Metric and Imperial systems via HA global settings
+
+<p float="left">
+<img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/md.images/ha-card-waze-travel-time.png" width="40%" height="auto" alt="Home Assistant lovelace card">
+</p>  
 
 ## Card Configuration    
 
@@ -78,17 +82,15 @@ style: |
     --secondary-text-color: #727272;
     --text-primary-color: #ffffff;
     --disabled-text-color: #bdbdbd;
-    background-image: url("/local/imgs/card_back.png")
-    background-repeat: no-repeat
-    background-color: rgba(50,50,50,0.3)
-    background-size: 100% 300px
-    border-radius: 20px
-    border: solid 1px rgba(100,100,100,0.3)
-    box-shadow: 3px 3px rgba(0,0,0,0.4)
+    background-image: url("/local/imgs/card_back.png") ;
+    background-repeat: no-repeat ;
+    background-color: rgba(50,50,50,0.3) ;
+    background-size: 100% 300px ;
+    border-radius: 20px ;
+    border: solid 1px rgba(100,100,100,0.3) ;
+    box-shadow: 3px 3px rgba(0,0,0,0.4) ;
   }
 ```
-
-<img src="https://gitlab.com/rrenato/ha-card-waze-travel-time/raw/master/md.images/ha-card-waze-travel-time.png"  width="40%" height="40%" alt="Home Assistant lovelace card">
 
 [license-shield]:https://img.shields.io/github/license/r-renato/hass-xiaomi-mi-flora-and-flower-care
 [buymecoffee]: https://www.buymeacoffee.com/0D3WbkKrn

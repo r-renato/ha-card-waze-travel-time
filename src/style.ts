@@ -3,6 +3,7 @@ import { css } from 'lit-element';
 const style = css`
     ha-card {
         padding: 7px 7px 7px 7px;
+        // color: var(--primary-text-color)
     }
     
     .banner {
@@ -34,7 +35,7 @@ const style = css`
         font-weight: 500;
         line-height: 16px;
         padding: 16px;
-        color: white;
+        color: var(--primary-text-color);
         width: 100%;
         background: rgba(0, 0, 0, var(--dark-secondary-opacity));
     }
@@ -46,8 +47,8 @@ const style = css`
       .ha-card-waze table { width: 100%; }
       .ha-card-waze tr:nth-of-type(odd) { /*background: #eee; */ }
       .ha-card-waze th { /*background: #3498db;*/ color: white; font-weight: bold; }
-      .ha-card-waze td { padding-left: 10px ; padding-right: 10px ; color: white ; text-align: left; }
-      .ha-card-waze th { padding-left: 10px ; padding-right: 10px ; color: white ; text-align: left; }
+      .ha-card-waze td { padding-left: 10px ; padding-right: 10px ; color: var(--primary-text-color) ; text-align: left; }
+      .ha-card-waze th { padding-left: 10px ; padding-right: 10px ; color: var(--primary-text-color) ; text-align: left; }
 `;
 
 export default style;
