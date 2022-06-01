@@ -1,6 +1,6 @@
 # HA (Lovelace) Card Waze Travel Time
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 
 [![License][license-shield]](LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/r-renato/ha-card-waze-travel-time.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/r-renato/ha-card-waze-travel-time/alerts/)
